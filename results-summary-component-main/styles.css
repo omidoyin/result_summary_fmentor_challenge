@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+  max-width: 1240px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  border-radius: 25px;
+  box-shadow: 10px 10px 19px rgb(168, 165, 165);
+  width: clamp(30rem, 70vw, 50rem);
+  margin-bottom: 3rem;
+}
+.left {
+  margin-right: 1rem;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 25px;
+
+  background-image: linear-gradient(
+    -170deg,
+    hsl(252, 100%, 67%),
+    hsla(241, 81%, 54%, 0.931) 30%
+  );
+}
+.left .head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1rem;
+  padding: 1rem;
+  color: hsl(241, 100%, 89%);
+}
+.left .circle {
+  width: clamp(10rem, 30vw, 16rem);
+  height: clamp(10rem, 30vw, 16rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 50%;
+  color: hsl(0, 0%, 100%);
+  background-image: linear-gradient(
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+  );
+}
+.left .circle h2 {
+  font-size: clamp(3rem, 5vw, 6rem);
+}
+.left .remark {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  color: hsl(0, 0%, 100%);
+}
+.left p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+  color: hsl(241, 100%, 89%);
+}
+
+.right {
+  flex: 1;
+  padding-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  padding-top: 3rem;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  height: 100%;
+}
+.right .reaction-card {
+  margin-top: 1rem;
+  padding-right: 1rem;
+  height: 100%;
+}
+.right .reaction-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.7rem 1rem;
+  border-radius: 8px;
+  font-size: clamp(0.7rem, 2vw, 1rem);
+  margin-bottom: 2rem;
+}
+.row1 {
+  background-color: hsla(0, 100%, 67%, 0.102);
+}
+.row1 h4 {
+  color: hsla(0, 79%, 50%, 0.681);
+}
+.row2 {
+  background-color: hsla(39, 100%, 56%, 0.132);
+}
+.row2 h4 {
+  color: hsl(39, 100%, 56%);
+}
+.row3 {
+  background-color: hsla(166, 100%, 37%, 0.201);
+}
+.row3 h4 {
+  color: hsl(166, 100%, 37%);
+}
+.row4 {
+  background-color: hsla(234, 85%, 45%, 0.289);
+}
+.row4 h4 {
+  color: hsl(234, 85%, 45%);
+}
+
+.right .reaction-row :nth-child(2) {
+  flex-grow: 1;
+  margin-left: 0.5rem;
+}
+.right .reaction-row :nth-child(2) {
+  flex-grow: 1;
+  margin-left: 0.5rem;
+}
+
+.right .reaction-row :nth-child(3) {
+  color: hsl(224, 30%, 27%);
+}
+.right .reaction-row :nth-child(3) span {
+  color: hsl(241, 100%, 89%);
+}
+.right button {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  padding: 0.7rem 0;
+  background: hsl(224, 30%, 27%);
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+  border: none;
+  position: relative;
+  bottom: 0;
+}
+.right button:hover {
+  background-image: linear-gradient(
+    180deg,
+    hsla(252, 100%, 67%, 0.628),
+    hsla(241, 81%, 54%, 0.931)
+  );
+}
+
+@media screen and (max-width: 500px) {
+  .flex-row {
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+    box-shadow: 10px 10px 19px rgb(168, 165, 165);
+    width: 90%;
+    width: clamp(10rem, 70vw, 40rem);
+  }
+  .left {
+    margin-right: 1rem;
+    width: 100%;
+  }
+}
